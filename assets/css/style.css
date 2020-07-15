@@ -1,3 +1,18 @@
+/*********************************************************
+    BASIC SETTINGS
+*********************************************************/
+
+body {
+    font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    color: #686868;
+}
+
 .background-img {
     background-image: url('../images/background.svg');
     background-repeat: no-repeat;
@@ -7,4 +22,114 @@
     width: 100%;
 
     overflow: hidden;
+
+    display: flex;
+    justify-content: flex-start;
+}
+
+/*********************************************************
+    CERTIFICATE CSS
+*********************************************************/
+
+.certificate {
+    margin: 10px 30px 0px;
+    height: 557px;
+    width: 909px;
+    background: linear-gradient(90deg, #35b5ffdc 23.17%, #6034DCdc 130.33%);
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.25);
+}
+
+.certificate .left-pillar {
+    float: left;
+    height: 80%;
+    width: 95px;
+    background: #6034DC;
+}
+
+.certificate .certificate-content {
+    height: 100%;
+    width: 815px;
+    margin-left: 95px;
+    text-align: center;
+}
+
+.certificate .certificate-content .signature-line {
+    height: 3px;
+    width: 200px;
+    background-color: white;
+}
+
+.certificate .certificate-content p.certificate-header {
+    background: rgba(0, 0, 0, 0.521);
+    margin-top: 0;
+    padding: 10px;
+}
+
+/*********************************************************
+    RIGHT SIDE BAR CSS
+*********************************************************/
+
+.right-side-bar {
+    height: 100vh;
+    width: 300px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: #ffffff;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
+}
+
+.right-side-bar .certificate-recipent, .about-course {
+    height: 87px;
+    width: 280px;
+    margin: 0px auto;
+    background: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.right-side-bar .certificate-recipent span.user-name {
+    position: fixed;
+    top: 85px;
+    right: 90px;
+    color: rgb(49, 47, 47);
+}
+
+.right-side-bar .about-course {
+    height: 380px !important;
+}
+
+.right-side-bar .about-course .course-image {
+    width: 107%;
+}
+
+.right-side-bar .buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.right-side-bar .buttons .btn {
+    width: 150px;
+    border: none;
+    outline: none;
+    background: #6034DC;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 1px grey;
+}
+
+.right-side-bar .buttons .btn i {
+    float: left;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 300px;
+    left: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.521);
+    width: 100%;
+    color: white;
+    padding: 5px;
 }
